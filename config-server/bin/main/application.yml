@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/HashanR/ConfigStore.git
+          search-paths:
+           - 'service-config/*service'
+server:
+  port: 8888
+  
